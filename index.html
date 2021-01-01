@@ -107,26 +107,93 @@
             <div class="container-fluid p-0">
                 <div class="container">
                     <div class="text-center h2">Commands</div>
+                    <input type="text" id="SearchQuery" name="q" onkeyup="myFunction()" placeholder="Search for a command" title="Search for a command">
+                    <!-- list of them: credits ; disconnect ; drive ; help ; invite ; join ; move ; play ; ping ; ready ; reload ; restart ; stats ; welcome ; </table>-->
+                    <table class="align-items-center" id="commands-info">
+                        <tr id="credits">
+                            <td class="text-box bungee-body-text bungee-centered" name="credits">
+                                Credits
+                                <hr class="divider my-2">
+                                <p class="bungee-small-body-text bungee-centered">
+                                    Find out who made this!<br>Usage:
+                                    <pre><code>=credits</code></pre>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="disconnect">
+                            <td class="text-box bungee-body-text bungee-centered" name="disconnect">
+                                Disconnect
+                                <hr class="divider my-2">
+                                <p class="bungee-small-body-text bungee-centered">
+                                    Disconnect MinerBot from a voice channel. [NOTE: You must be in the same voice channel as him, for this to work.]
+                                    <br>Usage:
+                                    <pre><code>=disconnect</code></pre>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="drive">
+                            <td class="text-box bungee-body-text bungee-centered" name="drive">
+                                Drive
+                                <hr class="divider my-2">
+                                <p class="bungee-small-body-text bungee-centered">
+                                    Find out who made this!<br>Usage:
+                                    <pre><code>=drive</code></pre>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="help">
+                            <td class="text-box bungee-body-text bungee-centered" name="help">
+                                Help
+                                <hr class="divider my-2">
+                                <p class="bungee-small-body-text bungee-centered">
+                                    Find out who made this!<br>Usage:<br>
+                                    <code>=help</code> - get a list of all commands<br>
+                                    <code>=help [command name]</code> - get more info on a specific command
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="invite">
+                            <td class="text-box bungee-body-text bungee-centered" name="invite">
+                                Invite
+                                <hr class="divider my-2">
+                                <p class="bungee-small-body-text bungee-centered">
+                                    Find out who made this!<br>Usage:
+                                    <pre><code>=invite</code></pre>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="join">
+                            <td class="text-box bungee-body-text bungee-centered" name="join">
+                                Join
+                                <hr class="divider my-2">
+                                <p class="bungee-small-body-text bungee-centered">
+                                    Find out who made this!<br>Usage:
+                                    <pre><code>=join</code></pre>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
                     <script>
-                        function search() {
-                            const f = document.getElementById('form')
-                            const q = document.getElementById('SearchQuery')
+                        function myFunction() {
+                            var input, filter, table, tr, td, i, txtValue;
                             input = document.getElementById("SearchQuery");
-                            filter = input.value.toUppercase();
-                            table = document.getElementById("commands");
+                            filter = input.value.toUpperCase();
+                            table = document.getElementById("commands-info");
                             tr = table.getElementsByTagName("tr");
+                            for (i = 0; i < tr.length; i++) {
+                                td = tr[i].getElementsByTagName("td")[0];
+                                if (td) {
+                                    txtValue = td.textContent || td.innerText;
+                                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        tr[i].style.display = "";
+                                    } else {
+                                        tr[i].style.display = "none";
+                                    }
+                                }
+                            }
                         }
-                        
                     </script>
-                    <form action="/action_page.php">
-                        <label for="SearchQuery"></label>
-                        <input type="search" id="SearchQuery" name="q" placeholder="command details, or name">
-                        <input type="submit" value="Search">
-                    </form>
-                    <table class="Grid align-items-center" id="commands">credits<br>disconnect<br>drive<br>help<br>invite<br>join<br>move<br>play<br>ping<br>ready<br>reload<br>restart<br>stats<br>welcome<br></div>
-                        <tr id="credits"><td class="text-box bungee-body-text bungee-centered" name="credits">Credits<hr class="divider my-2"><p class="bungee-small-body-text bungee-centered">Find out who made this!<br>Usage:<pre><code>=credits</code></pre></p></td></tr>
-                        <tr id="disconnect"><td class="text-box bungee-body-text bungee-centered" name="disconnect">Disconnect<hr class="divider my-2"><p class="bungee-small-body-text bungee-centered">Disconnect MinerBot from a voice channel. [NOTE: You must be in the same voice channel as him, for this to work.]<br>Usage:<pre><code>=disconnect</code></pre></p></td></tr>
-                    <div id="drive" name="drive"></div>
+                        <div id="drive" name="drive"></div>
                     <pre><code>Hi</code></pre>
                 </div>
             </div>

@@ -472,6 +472,23 @@ mark,
   font-size: 24px !important;
 }
 
+.bungee-body-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 22px !important;
+}
+
+.bungee-centered {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center !important;
+}
+
+.bungee-small-body-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 18px !important;
+}
+
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
@@ -1664,6 +1681,18 @@ pre code {
   .offset-xl-11 {
     margin-left: 91.6666666667%;
   }
+}
+#commands-info {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+}
+#commands-info th, #commands-info td {
+  text-align: center;
+  padding: 12px;
+}
+#commands-info tr {
+  border-bottom: 1px solid #ddd;
 }
 .table {
   width: 100%;
@@ -9659,6 +9688,13 @@ button.bg-dark:focus {
   pointer-events: auto;
   content: "";
   background-color: rgba(0, 0, 0, 0);
+}
+
+.text-box {
+  display: flexbox;
+  width: 50%;
+  background-color: #ecececab;
+  border-color: #ffbb00;
 }
 
 .text-monospace {
