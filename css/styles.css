@@ -1694,6 +1694,9 @@ pre code {
 #commands-info tr {
   border-bottom: 1px solid #ddd;
 }
+#SearchQuery {
+  width: 100%;
+}
 .table {
   width: 100%;
   margin-bottom: 1rem;
