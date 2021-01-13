@@ -4,5 +4,6 @@ This is the source code for MinerBot's Official Website. MinerBot is a Discord b
 ### Who is MinerBot??
 He is a Discord bot, that I (IcicleSavage) created. 
 
-### Well... what if the bot seems to be broke?
+### Well... what if the bot seems to be broken?
 If you have a Discord account, you can DM me at IcicleSavage#0381.
+Otherwise, make an issue and title it "Miner Error, on [the command that you tried to run]".
