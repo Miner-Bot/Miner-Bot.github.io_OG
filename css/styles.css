@@ -4023,6 +4023,7 @@ input[type=button].btn-block {
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+  background-color: #f4623a;
 }
 
 .navbar-nav {
