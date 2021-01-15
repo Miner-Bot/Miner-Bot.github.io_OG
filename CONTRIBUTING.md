@@ -7,4 +7,4 @@
 
 ## Other General Contribution Guidelines
 - Check out the [Code of Conduct](https://github.com/IcicleSavage/IcicleSavage.github.io/blob/main/CODE_OF_CONDUCT.md).
-- If you have any questions, or feedback... or even contributions, email us at minersfeedback@gmail.com [Direct mail link here.](mailto:minersfeedback@gmail.com)
+- If you have any questions, or feedback... or even contributions, email us at minersfeedback@gmail.com *[Direct mail link here.](mailto:minersfeedback@gmail.com)*
