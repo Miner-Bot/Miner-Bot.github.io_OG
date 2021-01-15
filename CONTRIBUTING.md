@@ -8,3 +8,6 @@
 ## Other General Contribution Guidelines
 - Check out the [Code of Conduct](https://github.com/IcicleSavage/IcicleSavage.github.io/blob/main/CODE_OF_CONDUCT.md).
 - If you have any questions, or feedback... or even contributions, email us at minersfeedback@gmail.com *[Direct mail link here.](mailto:minersfeedback@gmail.com)*
+
+### Wanna check out some of the latest features, that aren't accessible?
+Head over to [the website](https://minerbot.xyz/) and fix the URL to be `minerbot.xyz/[name of the file]`.
