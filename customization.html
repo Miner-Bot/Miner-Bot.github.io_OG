@@ -67,6 +67,10 @@
                             function showRandomNumber(){
                                 document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
                             }
+                            function getGeneratedNumbers(){
+                                var num = document.getElementById("mynum");
+                                document.getElementById("num").innerHTML = document.getElementId("mynum").value;
+                            }
                         </script>
                     </div>
                 </div>
@@ -80,7 +84,7 @@
                     <input type="text" id="SearchQuery" name="q" onkeyup="myFunction()" placeholder="Search for a command" title="Search for a command" autocomplete="off">
                     <!-- list of them: credits ; disconnect ; drive ; help ; invite ; join ; move ; play ; ping ; ready ; reload ; restart ; stats ; welcome ; </table>-->
                     <table class="align-items-center" id="commands-info">
-                        <tr id="credits">
+                        <tr id="num">
                             <td class="text-box bungee-body-text bungee-centered" name="credits">
                                 Credits
                                 <hr class="divider my-2">
@@ -90,7 +94,7 @@
                                 </p>
                             </td>
                         </tr>
-                        <tr id="disconnect">
+                        <tr id="num2">
                             <td class="text-box bungee-body-text bungee-centered" name="disconnect">
                                 Disconnect
                                 <hr class="divider my-2">
@@ -101,7 +105,7 @@
                                 </p>
                             </td>
                         </tr>
-                        <tr id="drive">
+                        <tr id="num3">
                             <td class="text-box bungee-body-text bungee-centered" name="drive">
                                 Drive
                                 <hr class="divider my-2">
