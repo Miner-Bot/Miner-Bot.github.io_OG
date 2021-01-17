@@ -49,8 +49,11 @@
                     </div>
                 </div>
             </div>
+            <div id="myNumber"></div> <!-- Your number will appear in here -->
+            <a href="no-javascript.html" id="getNumber">Get number</a> <!-- Link to get number. If the user has no JS enabled it will redirect to no-javascript.html -->
             <script>
-                        var link = document.getElementById('getNumber'); // Gets the link
+                var link = document.getElementById('getNumber'); // Gets the link
+                link.onclick = getNumber; // Runs the function on click
                         function getNumber() {
                             var minNumber = 100; // The minimum number you want
                             var maxNumber = 999; // The maximum number you want
@@ -63,6 +66,7 @@
                         }
             </script>
             <button onclick="getNumber()">see</button>
+            
             <div id="myNumber"></div>
         </section>
         <!-- Number -->
