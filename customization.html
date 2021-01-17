@@ -46,14 +46,9 @@
                         <p class="text-white-50 mb-4">Get your phone number [Works only with MinerBot, and in Discord<a class="js-scroll-trigger" href="#footer">*</a>]</p>
                         <a class="btn btn-light btn-xl" href="#phone" target="_blank">Invite</a>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#more-information">More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div id="myNumber"></div> <!-- Your number will appear in here -->
-            <a href="no-javascript.html" id="getNumber">Get number</a> <!-- Link to get number. If the user has no JS enabled it will redirect to no-javascript.html -->
-            <script>
-                var link = document.getElementById('getNumber'); // Gets the link
-                link.onclick = getNumber; // Runs the function on click
+                        <script>
+                        var link = document.getElementById('getNumber'); // Gets the link
+                        link.onclick = getNumber; // Runs the function on click
                         function getNumber() {
                             var minNumber = 100; // The minimum number you want
                             var maxNumber = 999; // The maximum number you want
@@ -64,10 +59,13 @@
                             str(randomnumber + "-" + randomnumber + "-" + random4digit)
                             $('#myNumber').html(randomnumber);
                         }
-            </script>
-            <button onclick="getNumber()">see</button>
-            
-            <div id="myNumber"></div>
+                        </script>
+                        <div id="myNumber"></div> <!-- Your number will appear in here -->
+                        <a href="no-javascript.html" id="getNumber">Get number</a> <!-- Link to get number. If the user has no JS enabled it will redirect to no-javascript.html -->
+                        <button onclick="getNumber()">see</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Number -->
         <section class="page-section" id="phone">
