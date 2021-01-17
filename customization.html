@@ -124,6 +124,7 @@
                         </tr>
                     </table>
                     <script>
+                        var link = document.getElementById('getNumber'); // Gets the link
                         function getNumber() {
                             var minNumber = 100; // The minimum number you want
                             var maxNumber = 999; // The maximum number you want
@@ -131,7 +132,7 @@
                             var min4 = 1000;
                             var max4 = 9999;
                             var random4digit = Math.floor(Math.random() * (max4 + 1) + min4);
-                            randomnumber '+' randomnumber '+' random4digit .join('-')
+                            str(randomnumber + "-" + randomnumber + "-" + random4digit)
                             $('#myNumber').html(randomnumber);
                         }
                     </script>
