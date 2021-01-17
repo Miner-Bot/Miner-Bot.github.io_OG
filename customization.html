@@ -46,7 +46,6 @@
                         <p class="text-white-50 mb-4">Get your phone number [Works only with MinerBot, and in Discord<a class="js-scroll-trigger" href="#footer">*</a>]</p>
                         <a class="btn btn-light btn-xl" href="#phone">see available numbers</a>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#more-information">More Info</a>
-                        <a class="btn btn-light btn-xl" onclick="gteGeneratedNumbers()">VIEW</a>
                         <a class="btn btn-light btn-xl" onclick="showRandomNumber()">VIEW</a>
                         <div class="text-white" id="myNumber">[_]</div> <!-- Your number will appear in here -->
                         <div class="text-white" id="mynum">[_]</div> <!-- Your number will appear in here -->
@@ -81,8 +80,8 @@
             <div class="container-fluid p-0">
                 <div class="container">
                     <div class="text-center h2">Available Numbers</div>
-                    <input type="text" id="SearchQuery" name="q" onkeyup="myFunction()" placeholder="Search for a command" title="Search for a command" autocomplete="off">
-                    <!-- list of them: credits ; disconnect ; drive ; help ; invite ; join ; move ; play ; ping ; ready ; reload ; restart ; stats ; welcome ; </table>-->
+                    <a class="btn btn-light btn-xl" onclick="getGeneratedNumbers()">VIEW</a>
+                    <div class="text-white" id="num"></div>
                     <table class="align-items-center" id="commands-info">
                         <tr id="num">
                             <td class="text-box bungee-body-text bungee-centered" name="credits">
