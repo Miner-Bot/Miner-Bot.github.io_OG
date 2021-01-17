@@ -48,17 +48,24 @@
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#more-information">More Info</a>
                         <a class="btn btn-light btn-xl" onclick="getNumber()">VIEW</a>
                         <div class="text-white" id="myNumber">[_]</div> <!-- Your number will appear in here -->
+                        <div class="text-white" id="mynum">[_]</div> <!-- Your number will appear in here -->
                         <script>
                         function getNumber() {
                             var minNumber = 100; // The minimum number you want
                             var maxNumber = 999; // The maximum number you want
-                            var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
+                            var randomnumber = Math.floor(Math.random() * maxNumber) + minNumber;
                             var min4 = 1000;
                             var max4 = 9999;
                             var random4digit = Math.floor(Math.random() * (max4 + 1) + min4);
                             var number = str(randomnumber + "-" + randomnumber + "-" + random4digit)
                             document.getElementById("myNumber").innerHTML = number
                         }
+                        </script>
+                        <script src="https://randojs.com/1.0.0.js"></script>
+                        <script>
+                            function showRandomNumber(){
+                                document.getElementById("mynum").innerHTML = rando(5, 10);
+                            }
                         </script>
                     </div>
                 </div>
