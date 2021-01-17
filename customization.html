@@ -46,9 +46,9 @@
                         <p class="text-white-50 mb-4">Get your phone number [Works only with MinerBot, and in Discord<a class="js-scroll-trigger" href="#footer">*</a>]</p>
                         <a class="btn btn-light btn-xl" href="#phone" target="_blank">see available numbers</a>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#more-information">More Info</a>
+                        <button onclick="getNumber()">see</button>
+                        <div class="text-white" id="myNumber">[_]</div> <!-- Your number will appear in here -->
                         <script>
-                        var link = document.getElementById('getNumber'); // Gets the link
-                        link.onclick = getNumber; // Runs the function on click
                         function getNumber() {
                             var minNumber = 100; // The minimum number you want
                             var maxNumber = 999; // The maximum number you want
@@ -60,8 +60,6 @@
                             document.getElementById("myNumber").innerHTML = number
                         }
                         </script>
-                        <button onclick="getNumber()">see</button>
-                        <div id="myNumber">[_]</div> <!-- Your number will appear in here -->
                     </div>
                 </div>
             </div>
