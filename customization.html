@@ -54,8 +54,10 @@
         <section class="page-section" id="phone">
             <div class="container-fluid p-0">
                 <div class="container">
-                    <div class="text-center h2">Commands</div>
+                    <div class="text-center h2">Available Numbers</div>
                     <input type="text" id="SearchQuery" name="q" onkeyup="myFunction()" placeholder="Search for a command" title="Search for a command" autocomplete="off">
+                    <button onclick="getNumber()">see</button>
+                    <div id="myNumber"></div>
                     <!-- list of them: credits ; disconnect ; drive ; help ; invite ; join ; move ; play ; ping ; ready ; reload ; restart ; stats ; welcome ; </table>-->
                     <table class="align-items-center" id="commands-info">
                         <tr id="credits">
@@ -122,23 +124,15 @@
                         </tr>
                     </table>
                     <script>
-                        function myFunction() {
-                            var input, filter, table, tr, td, i, txtValue;
-                            input = document.getElementById("SearchQuery");
-                            filter = input.value.toUpperCase();
-                            table = document.getElementById("commands-info");
-                            tr = table.getElementsByTagName("tr");
-                            for (i = 0; i < tr.length; i++) {
-                                td = tr[i].getElementsByTagName("td")[0];
-                                if (td) {
-                                    txtValue = td.textContent || td.innerText;
-                                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                        tr[i].style.display = "";
-                                    } else {
-                                        tr[i].style.display = "none";
-                                    }
-                                }
-                            }
+                        function getNumber() {
+                            var minNumber = 100; // The minimum number you want
+                            var maxNumber = 999; // The maximum number you want
+                            var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
+                            var min4 = 1000;
+                            var max4 = 9999;
+                            var random4digit = Math.floor(Math.random() * (max4 + 1) + min4);
+                            randomnumber '+' randomnumber '+' random4digit .join('-')
+                            $('#myNumber').html(randomnumber);
                         }
                     </script>
                     <pre><code>Access a more up-to-date list of all of MinerBot's commands by using =help (in Discord).</code></pre>
