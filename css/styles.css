@@ -2443,7 +2443,7 @@ textarea.form-control {
   display: inline-block;
   font-weight: 400;
   color: #212529;
-  text-align: center;
+  text-align: center !important;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
