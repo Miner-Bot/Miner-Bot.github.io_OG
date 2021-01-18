@@ -61,16 +61,7 @@
                             document.getElementById("myNumber").innerHTML = number
                         }
                         </script>
-                        <script src="https://randojs.com/1.0.0.js"></script>
-                        <script>
-                            function showRandomNumber(){
-                                document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
-                            }
-                            function getGeneratedNumbers(){
-                                var num = document.getElementById("mynum").innerhtml;
-                                document.getElementById("num").innerHTML = num;
-                            }
-                        </script>
+                        
                     </div>
                 </div>
             </div>
@@ -82,6 +73,7 @@
                     <div class="text-center h2">Available Numbers</div>
                     <a class="btn btn-light btn-xl" onclick="getGeneratedNumbers()">VIEW</a>
                     <div class="text-white" id="num"></div>
+                    <div id="mynum"
                     <table class="align-items-center" id="commands-info">
                         <tr id="num">
                             <td class="text-box bungee-body-text bungee-centered" name="credits">
@@ -141,8 +133,13 @@
                             </td>
                         </tr>
                     </table>
+                    <script src="https://randojs.com/1.0.0.js"></script>
+                    <script>
+                            function showRandomNumber(){
+                                document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
+                            }
+                        </script>
                     <!-- This is where the myfunction(); script goes -->
-                    <pre><code>Access a more up-to-date list of all of MinerBot's commands by using =help (in Discord).</code></pre>
                 </div>
             </div>
         </section>
