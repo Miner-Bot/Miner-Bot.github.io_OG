@@ -72,73 +72,14 @@
                 <div class="container">
                     <div class="text-center h2">Available Numbers</div>
                     <a class="btn btn-light btn-xl" onclick="showRandomNumber()">VIEW</a>
-                    <div class="text-white" id="num"></div>
-                    <div onload="showRandomNumber()" id="mynum">___-___-____</div>
-                    <table class="align-items-center" id="commands-info">
-                        <tr id="num">
-                            <td class="text-box bungee-body-text bungee-centered" name="credits">
-                                ___-___-____                               
-                            </td>
-                        </tr>
-                        <tr id="num2">
-                            <td class="text-box bungee-body-text bungee-centered" name="disconnect">
-                                Disconnect
-                                <hr class="divider my-2">
-                                <p class="bungee-small-body-text bungee-centered">
-                                    Disconnect MinerBot from a voice channel. [NOTE: You must be in the same voice channel as him, for this to work.]
-                                    <br>Usage:
-                                    <pre><code>=disconnect</code></pre>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="num3">
-                            <td class="text-box bungee-body-text bungee-centered" name="drive">
-                                Drive
-                                <hr class="divider my-2">
-                                <p class="bungee-small-body-text bungee-centered">
-                                    Find out who made this!<br>Usage:
-                                    <pre><code>=drive</code></pre>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="help">
-                            <td class="text-box bungee-body-text bungee-centered" name="help">
-                                Help
-                                <hr class="divider my-2">
-                                <p class="bungee-small-body-text bungee-centered">
-                                    Find out who made this!<br>Usage:<br>
-                                    <code>=help</code> - get a list of all commands<br>
-                                    <code>=help [command name]</code> - get more info on a specific command
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="invite">
-                            <td class="text-box bungee-body-text bungee-centered" name="invite">
-                                Invite
-                                <hr class="divider my-2">
-                                <p class="bungee-small-body-text bungee-centered">
-                                    Find out who made this!<br>Usage:
-                                    <pre><code>=invite</code></pre>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="join">
-                            <td class="text-box bungee-body-text bungee-centered" name="join">
-                                Join
-                                <hr class="divider my-2">
-                                <p class="bungee-small-body-text bungee-centered">
-                                    Find out who made this!<br>Usage:
-                                    <pre><code>=join</code></pre>
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
+                    <div id="mynum">___-___-____</div>
                     <script src="https://randojs.com/1.0.0.js"></script>
                     <script>
                             function showRandomNumber(){
                                 document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
+                                var number = document.getElementById("mynum");
                             }
-                        </script>
+                    </script>
                     <!-- This is where the myfunction(); script goes -->
                 </div>
             </div>
