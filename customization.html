@@ -67,8 +67,8 @@
                                 document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
                             }
                             function getGeneratedNumbers(){
-                                var num = document.getElementById("mynum");
-                                document.getElementById("num").innerHTML = document.getElementId("mynum").value;
+                                var num = document.getElementById("mynum").innerhtml;
+                                document.getElementById("num").innerHTML = num;
                             }
                         </script>
                     </div>
@@ -85,12 +85,7 @@
                     <table class="align-items-center" id="commands-info">
                         <tr id="num">
                             <td class="text-box bungee-body-text bungee-centered" name="credits">
-                                Credits
-                                <hr class="divider my-2">
-                                <p class="bungee-small-body-text bungee-centered">
-                                    Find out who made this!<br>Usage:
-                                    <pre><code>=credits</code></pre>
-                                </p>
+                                ___-___-____                               
                             </td>
                         </tr>
                         <tr id="num2">
