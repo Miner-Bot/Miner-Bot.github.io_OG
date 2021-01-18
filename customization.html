@@ -70,10 +70,13 @@
             <div class="container-fluid p-0">
                 <div class="container">
                     <div class="text-center h2">Available Numbers</div>
-                    <a class="btn btn-light btn-xl" onclick="showRandomNumber() numberSave()">VIEW</a>
-                    <a class="btn btn-light btn-xl" onclick="numberSave()">VIEW</a>
+                    <a class="btn btn-light btn-xl" onclick="showRandomNumber() numberSave() newNumber">VIEW</a>
                     <div class="text-center" id="mynum">[_]</div>
                     <div class="text-center" id="tt">[_]</div>
+                    <div class="text-center" id="uu">[_]</div>
+                    <div class="text-center" id="vv">[_]</div>
+                    <div class="text-center" id="ww">[_]</div>
+                    <div class="text-center" id="yy">[_]</div>
                     <script src="https://randojs.com/1.0.0.js"></script>
                     <script>
                         function showRandomNumber(){
@@ -82,6 +85,18 @@
                         function numberSave(){
                             var number = document.getElementById("mynum").innerHTML;
                             document.getElementById("tt").innerHTML = number;
+                        }
+                        function newNumber(){
+                            var number1 = document.getElementById("mynum").innerHTML;
+                            var number2 = document.getElementById("mynum").innerHTML;
+                            var number3 = document.getElementById("mynum").innerHTML;
+                            var number4 = document.getElementById("mynum").innerHTML;
+
+                            document.getElementById("uu").innerHTML = number1;
+                            document.getElementById("vv").innerHTML = number2;
+                            document.getElementById("ww").innerHTML = number3;
+                            document.getElementById("yy").innerHTML = number4;
+
                         }
                     </script>
                     <!-- This is where the myfunction(); script goes -->
