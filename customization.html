@@ -72,12 +72,14 @@
                     <div class="text-center h2">Available Numbers</div>
                     <a class="btn btn-light btn-xl" onclick="showRandomNumber()">VIEW</a>
                     <a class="btn btn-light btn-xl" onclick="numberSave()">VIEW</a>
-                    <div class="text-center" id="mynum">[_]</div>
+                    <div class="text-center" id="mynum" onchange="numberSave()">[_]</div>
                     <div class="text-center" id="tt">[_]</div>
                     <script src="https://randojs.com/1.0.0.js"></script>
                     <script>
                         function showRandomNumber(){
                             document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
+                        }
+                        function numberSave(){
                             var number = document.getElementById("mynum").innerHTML;
                             document.getElementById("tt").innerHTML = number;
                         }
