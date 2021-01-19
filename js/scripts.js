@@ -76,10 +76,6 @@ function submitted(event) {
 f.addEventListener('submit', submitted);
 
 (function(){
-   $( "#generate" ).one( "click", function() {
-      setTimeout(() => {
-         var number = document.getElementById("mynum").innerHTML;
-         document.getElementById("tt").innerHTML = number;
-      }, 2000);
+   $( "#generate" ).one( "click", numberSave();
    });
 });
