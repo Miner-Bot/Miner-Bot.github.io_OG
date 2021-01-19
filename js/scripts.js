@@ -74,8 +74,3 @@ function submitted(event) {
 }
 
 f.addEventListener('submit', submitted);
-
-(function(){
-   $( "#generate" ).one( "click", numberSave();
-   });
-});
