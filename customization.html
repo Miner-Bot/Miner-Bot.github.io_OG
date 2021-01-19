@@ -73,22 +73,23 @@
                     <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button>
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <div class="text-center" id="mynum">[_]</div>
+                    <div class="text-center" id="myData">[_]</div>
                     <script>
-fetch('numbers.json')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    appendData(data);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
+                        fetch('numbers.json')
+                            .then(function (response) {
+                            return response.json();
+                        })
+                            .then(function (data) {
+                            appendData(data);
+                        })
+                            .catch(function (err) {
+                            console.log(err);
+                        });
                         function appendData(data) {
                             var mainContainer = document.getElementById("myData");
                             for (var i = 0; i < data.length; i++) {
                                 var div = document.createElement("div");
-                                div.innerHTML = data[i].number;
+                                div.innerHTML = data[i].id + ' ' + data[i].number;
                                 mainContainer.appendChild(div);
                             }
                         }
