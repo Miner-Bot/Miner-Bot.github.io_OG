@@ -73,6 +73,26 @@
                     <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button>
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <div class="text-center" id="mynum">[_]</div>
+                    <script>
+fetch('numbers.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    appendData(data);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+                        function appendData(data) {
+                            var mainContainer = document.getElementById("myData");
+                            for (var i = 0; i < data.length; i++) {
+                                var div = document.createElement("div");
+                                div.innerHTML = data[i].number;
+                                mainContainer.appendChild(div);
+                            }
+                        }
+                    </script>
                     <!-- Script, of number generation here: https://www.w3schools.com/code/tryit.asp?filename=GMSZ7FWC4WJH -->
                     <script src="https://randojs.com/1.0.0.js"></script>
                     <script>
