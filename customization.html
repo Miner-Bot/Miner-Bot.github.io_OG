@@ -70,7 +70,7 @@
             <div class="container-fluid p-0">
                 <div class="container">
                     <div class="text-center h2">Available Numbers</div>
-                    <button class="btn btn-light btn-xl" onclick="showRandomNumber(); numberSave();">VIEW</button>
+                    <button class="btn btn-light btn-xl" id="generate" onclick="showRandomNumber(); numberSave();">VIEW</button>
                     <div class="text-center" id="mynum">[_]</div>
                     <div class="text-center" id="tt">[_]</div>
                     <script src="https://randojs.com/1.0.0.js"></script>
@@ -79,6 +79,12 @@
                             document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
                         }
                         function numberSave(){
+                            var myButton = document.getElementById('generate');
+                            var handler = function(){
+                                // doSomething
+                                myButton.removeEventListener('click',handler);
+                            }
+                            myButton.addEventListener('click', handler);
                             setTimeout(() => {
                             var number = document.getElementById("mynum").innerHTML;
                             document.getElementById("tt").innerHTML = number;
