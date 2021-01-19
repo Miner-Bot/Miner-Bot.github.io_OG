@@ -76,7 +76,7 @@ function submitted(event) {
 f.addEventListener('submit', submitted);
 
 (function(){
-   $( "#foo" ).one( "click", function() {
+   $( "#generate" ).one( "click", function() {
       setTimeout(() => {
          var number = document.getElementById("mynum").innerHTML;
          document.getElementById("tt").innerHTML = number;
