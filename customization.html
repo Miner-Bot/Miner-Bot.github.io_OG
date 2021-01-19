@@ -70,7 +70,7 @@
             <div class="container-fluid p-0">
                 <div class="container">
                     <div class="text-center h2">Available Numbers</div>
-                    <button class="btn btn-light btn-xl" id="generate" onclick="Numbers(); eeee(10);">VIEW</button>
+                    <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button>
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <div class="text-center" id="mynum">[_]</div>
                     <!-- Script, of number generation here: https://www.w3schools.com/code/tryit.asp?filename=GMSZ7FWC4WJH -->
@@ -82,18 +82,17 @@ function eeee(times){
         document.getElementById("mynum").innerHTML = numbs + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999) + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
     }
 }
-function Numbers(){
 // For Reference:
 //  function numberSave(){
 //    setTimeout(() => {
 //    var number = document.getElementById("mynum").innerHTML;
 //  }, 2000);
-function showRandomNumber(){
-                                document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999) + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
-                                }
-showRandomNumber();
-eeee();
-}
+
+                        function Numbers(){
+                            document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999) + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
+                        }
+                        Numbers();
+                        }
                     </script>
                     <!-- This is where the myfunction(); script goes -->
                 </div>
