@@ -89,7 +89,7 @@
                             var mainContainer = document.getElementById("myData");
                             for (var i = 0; i < data.length; i++) {
                                 var div = document.createElement("div");
-                                div.innerHTML = data[i].id + ' : ' + data[i].number;
+                                div.innerHTML = '<table class="align-items-left">' + '<tr><td>' + data[i].number + '</td></tr>' + '</table>';
                                 mainContainer.appendChild(div);
                             }
                         }
