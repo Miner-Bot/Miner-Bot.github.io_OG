@@ -79,8 +79,10 @@
                             document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
                         }
                         function numberSave(){
+                            setTimeout(() => {
                             var number = document.getElementById("mynum").innerHTML;
                             document.getElementById("tt").innerHTML = number;
+                                 }, 2000);
                         }
                     </script>
                     <!-- This is where the myfunction(); script goes -->
