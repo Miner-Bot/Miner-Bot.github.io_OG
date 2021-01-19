@@ -74,3 +74,15 @@ function submitted(event) {
 }
 
 f.addEventListener('submit', submitted);
+
+(function(){
+   var myButton = document.getElementById('generate');
+   var handler = function(){
+      setTimeout(() => {
+         var number = document.getElementById("mynum").innerHTML;
+         document.getElementById("tt").innerHTML = number;
+      }, 2000);
+      myButton.removeEventListener('click',handler);
+   }
+   myButton.addEventListener('click', handler);
+})();
