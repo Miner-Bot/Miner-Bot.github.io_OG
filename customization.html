@@ -45,9 +45,7 @@
                         <hr class="divider light my-4" />
                         <p class="text-white-50 mb-4">Get your phone number [Works only with MinerBot, and in Discord<a class="js-scroll-trigger" href="#footer">*</a>]</p>
                         <a class="btn btn-light btn-xl" href="#phone">See Numbers</a>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#more-information">More Info</a>
-                        <div class="text-white" id="myNumber">[_]</div> <!-- Your number will appear in here -->
-                    </div>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#more-information">More Info</a>                    </div>
                 </div>
             </div>
         </section>
@@ -83,24 +81,22 @@
                     <!-- Script, of number generation here: https://www.w3schools.com/code/tryit.asp?filename=GMSZ7FWC4WJH -->
                     <script src="https://randojs.com/1.0.0.js"></script>
                     <script>
-function eeee(times){
-    for (var number = 1; number <= times; number++) {
-        var numbs = document.getElementById("mynum").innerHTML;
-        document.getElementById("mynum").innerHTML = numbs + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999) + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
-    }
-}
-// For Reference:
-//  function numberSave(){
-//    setTimeout(() => {
-//    var number = document.getElementById("mynum").innerHTML;
-//  }, 2000);
-
+                        function eeee(times){
+                            for (var number = 1; number <= times; number++) {
+                                var numbs = document.getElementById("mynum").innerHTML;
+                                document.getElementById("mynum").innerHTML = numbs + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999) + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
+                            }
+                        }
                         function Numbers(){
                             document.getElementById("mynum").innerHTML = rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999) + '<br>' + rando(100, 999) + '-' + rando(100,999) + '-' + rando(1000,9999);
                         }
                         Numbers();
-                        }
                     </script>
+                    <!-- For Reference:
+                        function numberSave(){
+                            setTimeout(() => {
+                                var number = document.getElementById("mynum").innerHTML;
+                            }, 2000); -->
                     <!-- This is where the myfunction(); script goes -->
                 </div>
             </div

@@ -2534,8 +2534,8 @@ fieldset:disabled a.btn {
 }
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #f4623ad2;
-  border-color: #f4623ad2;
+  background-color: #ff9868d2;
+  border-color: #ff9868d2;
 }
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
@@ -4020,7 +4020,6 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  text-color:  #f4623a;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
