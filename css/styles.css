@@ -10092,7 +10092,7 @@ hr.light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: #F57653;
+    color: rgb(255, 255, 255);
   }
   #mainNav .navbar-brand:hover {
     color: #f4623a;
