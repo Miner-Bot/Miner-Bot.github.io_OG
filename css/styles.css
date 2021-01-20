@@ -4020,6 +4020,7 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
