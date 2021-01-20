@@ -61,16 +61,3 @@
   });
 
 })(jQuery); // End of use strict
-const f = document.getElementById('form');
-const q = document.getElementById('query');
-const google = 'file:///C:/Users/mjsey/HelloWorld/startbootstrap-creative-gh-pages/index.html#commands';
-const site = '/';
-
-function submitted(event) {
-  event.preventDefault();
-  const url = google + site + '+' + q.value;
-  const win = window.open(url, '_blank');
-  win.focus();
-}
-
-f.addEventListener('submit', submitted);
