@@ -10095,7 +10095,7 @@ hr.light {
     color: rgb(255, 255, 255);
   }
   #mainNav .navbar-brand:hover {
-    color: rgb(226, 112, 19);
+    color: rgb(248, 157, 132);
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.815);
@@ -10112,7 +10112,7 @@ hr.light {
     background-color: #fff;
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #000000;
+    color: #F57653;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #f4623a;
