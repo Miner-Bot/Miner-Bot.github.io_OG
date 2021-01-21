@@ -13,5 +13,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Hello world action
+    - uses: secrethub/actions/env-export@v0.1.0
     env: # Or as an environment variable
-      password: ${{ secrets.GOOGLE_AUTH_INFO }}
+      GOOGLE_AUTH_INFO: ${{ secrets.GOOGLE_AUTH_INFO }}
