@@ -29,3 +29,4 @@ if(!$mail->send()) {
 } else {
   echo 'Message has been sent.';
 }
+?>
