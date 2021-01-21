@@ -264,13 +264,12 @@ select {
 
 select {
   word-wrap: normal;
-}
-
-select.btn {
-  display: block;
-  color: #fff;
-  background-color: #fc5426d6;
-  border-color: #fc5426;
+  width: 100%;
+  padding: 16px 20px;
+  border: rectangle;
+  border color: #000;
+  border-radius: 1px;
+  background-color: #3ACCF4;
 }
 
 button,
