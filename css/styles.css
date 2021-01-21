@@ -10110,7 +10110,7 @@ hr.light {
     color: rgba(255, 255, 255, 0.815);
     padding: 0 1rem;
   }
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
+  #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link-customization:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link, #mainNav .navbar-nav .nav-item:last-child .nav-link-customization {
@@ -10134,9 +10134,6 @@ hr.light {
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
-  }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link-customization:hover {
-    color: #fff
   }
 }
 
