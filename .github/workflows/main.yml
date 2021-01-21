@@ -1,18 +1,12 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run. 
 on: push
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  notify-slack:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Hello world action
-    - uses: secrethub/actions/env-export@v0.1.0
-    env: # Or as an environment variable
-      GOOGLE_AUTH_INFO: ${{ secrets.GOOGLE_AUTH_INFO }}
+      - uses: actions/checkout@v2
+      - uses: secrethub/actions/env-export@v0.2.1
+        env:
+          SECRETHUB_CREDENTIAL: ${{ secrets.SECRETHUB_CREDENTIAL }}
+          SLACK_WEBHOOK: secrethub://company/app/slack/webhook
+      - name: Print environment with masked secrets
+        run: printenv
