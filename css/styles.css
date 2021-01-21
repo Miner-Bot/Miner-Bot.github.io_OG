@@ -10132,8 +10132,11 @@ hr.light {
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link-customization {
     color: #000000;
   }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link-customization:hover {
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link-customization:hover {
+    color: #fff
   }
 }
 
