@@ -266,6 +266,13 @@ select {
   word-wrap: normal;
 }
 
+select.btn {
+  display: block;
+  color: #fff;
+  background-color: #fc5426d6;
+  border-color: #fc5426;
+}
+
 button,
 [type=button],
 [type=reset],
