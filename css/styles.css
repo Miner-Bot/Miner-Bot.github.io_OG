@@ -267,7 +267,7 @@ select {
   width: 100%;
   padding: 16px 20px;
   border: rectangle;
-  border color: #000;
+  border-color: #000;
   border-radius: 1px;
   background-color: #3ACCF4;
 }
@@ -10102,7 +10102,7 @@ hr.light {
   }
   #mainNav .navbar-brand {
     color: rgb(255, 255, 255);
- 
+  }
   #mainNav .navbar-brand:hover {
     color: #f4623a;
   }
