@@ -2517,36 +2517,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 
-.btn-primary-customization {
-  color: #fff;
-  background-color: #f4623ad2;
-  border-color: #f4623ad0;
-}
-.btn-primary-customization:hover {
-  color: #fff;
-  background-color: #ff9868d2;
-  border-color: #ff9868d2;
-}
-.btn-primary-customization:focus, .btn-primary-customization.focus {
-  color: #fff;
-  background-color: #fff;
-  border-color: #ffffff4d;
-  box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
-}
-.btn-primary-customization.disabled, .btn-primary-customization:disabled {
-  color: #fff;
-  background-color: #f4623ab0;
-  border-color: #f4623ab0;
-}
-.btn-primary-customization:not(:disabled):not(.disabled):active, .btn-primary-customization:not(:disabled):not(.disabled).active, .show > .btn-primary-customization.dropdown-toggle {
-  color: #fff;
-  background-color: #f4623a4d;
-  border-color: #f4623a4d;
-}
-.btn-primary-customization:not(:disabled):not(.disabled):active:focus, .btn-primary-customization:not(:disabled):not(.disabled).active:focus, .show > .btn-primary-customization.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
-}
-
 .btn-secondary {
   color: #fff;
   background-color: #fc5426d6;
@@ -10109,18 +10079,21 @@ hr.light {
   font-size: 35px;
   color: #000000;
 }
-#mainNav .navbar-nav .nav-item .nav-link {
+#mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .nav-link-customization {
   color: #000000;
   font-family: "Bungee", "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 300;
   font-size: 18px;
   padding: 0.75rem 0;
 }
-#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link-customization:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #f4623a;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #f4623a !important;
+}
+#mainNav .nav-link-customization:active, .nav-link-customization.active {
+  color: #fff;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10129,18 +10102,18 @@ hr.light {
   }
   #mainNav .navbar-brand {
     color: rgb(255, 255, 255);
-  }
+ 
   #mainNav .navbar-brand:hover {
     color: #f4623a;
   }
-  #mainNav .navbar-nav .nav-item .nav-link {
+  #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .nav-link-customization {
     color: rgba(255, 255, 255, 0.815);
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
   }
-  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+  #mainNav .navbar-nav .nav-item:last-child .nav-link, #mainNav .navbar-nav .nav-item:last-child .nav-link-customization {
     padding-right: 0;
   }
   #mainNav.navbar-scrolled {
@@ -10156,7 +10129,10 @@ hr.light {
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #000000;
   }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link-customization {
+    color: #000000;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link-customization:hover {
     color: #f4623a;
   }
 }
