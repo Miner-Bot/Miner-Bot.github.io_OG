@@ -14,7 +14,7 @@ $mail->SMTPSecure = "tls";
 $mail->Port       = 587;
 $mail->Host       = "smtp.gmail.com";
 $mail->Username   = "minersfeedback@gmail.com";
-$mail->Password   = "********";
+$mail->Password   = "MinerBotIsBetterThanJakey!";
 $mail->IsHTML(true);
 $mail->addAddress($_POST['email'], 'My Friend');
 $mail->setFrom('minersfeedback@gmail.com', 'MinerBot');
