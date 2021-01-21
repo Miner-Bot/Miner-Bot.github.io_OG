@@ -61,10 +61,11 @@
                     <!-- 1( <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button> -->
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <!-- 1( <div class="text-center" id="myData">[_]</div> -->
-                    <form action="index.php">
+                    <form action="index.php" method="POST">
                         <select name="selected" id="selected">
                         </select>
-                        <input type="text"></button>
+                        <input type="text" id="email"></input>
+                        <button type="submit">Submit</button>
                     </form>
                     <script>
                         fetch('numbers.json')
