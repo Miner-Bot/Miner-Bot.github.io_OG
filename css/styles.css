@@ -2529,8 +2529,8 @@ fieldset:disabled a.btn {
 }
 .btn-primary-customization:focus, .btn-primary-customization.focus {
   color: #fff;
-  background-color: #f4623a8e;
-  border-color: #f4623a8e;
+  background-color: #fff;
+  border-color: #ffffff4d;
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary-customization.disabled, .btn-primary-customization:disabled {
@@ -2540,7 +2540,7 @@ fieldset:disabled a.btn {
 }
 .btn-primary-customization:not(:disabled):not(.disabled):active, .btn-primary-customization:not(:disabled):not(.disabled).active, .show > .btn-primary-customization.dropdown-toggle {
   color: #fff;
-  background-color: #fff;
+  background-color: #f4623a4d;
   border-color: #f4623a4d;
 }
 .btn-primary-customization:not(:disabled):not(.disabled):active:focus, .btn-primary-customization:not(:disabled):not(.disabled).active:focus, .show > .btn-primary-customization.dropdown-toggle:focus {
