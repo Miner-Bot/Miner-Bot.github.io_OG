@@ -62,6 +62,10 @@
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <!--<div class="text-center" id="myData">[_]</div>-->
                     <div class="text-center" id="myData">[_]</div>
+                    <form>
+                        <select name="selected" id="selected">
+                        </select>
+                    </form
                     <script>
                         fetch('numbers.json')
                             .then(function (response) {
@@ -74,11 +78,17 @@
                             console.log(err);
                         });
                         function appendData(data) {
-                            var mainContainer = document.getElementById("myData");
+                            var mainContainer = document.getElementById("selected");
                             for (var i = 0; i < data.length; i++) {
-                                var div = document.createElement("div");
-                                div.innerHTML = '<table class="align-items-left"><tr><td class="text-box bungee-body-text bungee-centered">' + data[i].number + '</td></tr></table>';
-                                mainContainer.appendChild(div);
+                                var option = document.createElement("option");
+                                var att = document.createAttribute("value");
+                                var att2 = document.createAttribute("label");
+                                option.innerHTML = data[i].number;
+                                att.value = data[i].number;
+                                att2.value = data[i].id;
+                                mainContainer.appendChild(option);
+                                option.setAttributeNode(att);
+                                option.setAttributeNode(att2);
                             }
                         }
                     </script>
