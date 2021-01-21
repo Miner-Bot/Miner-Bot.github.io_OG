@@ -7,6 +7,6 @@ jobs:
       - uses: secrethub/actions/env-export@v0.2.1
         env:
           SECRETHUB_CREDENTIAL: ${{ secrets.SECRETHUB_CREDENTIAL }}
-          SLACK_WEBHOOK: secrethub://company/app/slack/webhook
+          GOOGLE_AUTH_INFO: secrethub://IcicleSavage/secrets/GOOGLE_AUTH_INFO
       - name: Print environment with masked secrets
         run: printenv
