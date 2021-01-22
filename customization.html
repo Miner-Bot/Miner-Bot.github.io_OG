@@ -85,7 +85,9 @@
                       return $data;
                     }
                     ?>
-                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <form method="POST" action="<?php 
+                                                echo htmlspecialchars($_SERVER["PHP_SELF"]);
+                                                                                         ?>">
                         <select name="selected" id="selected">
                         </select>
                         <br>Discord Username: <input type="text" name="username"><span class="error">* <?php echo $usernameErr;?></span><br>
