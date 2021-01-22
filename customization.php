@@ -55,6 +55,9 @@
         </section>
         <!-- Number -->
         <section class="page-section" id="phone">
+            <style>
+                      .error {color: #FF0000;}
+            </style>
             <div class="container-fluid p-0">
                 <div class="container">
                     <div class="text-center h2">Available Numbers</div>
@@ -63,17 +66,7 @@
                     <!-- 1( <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button> -->
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <!-- 1( <div class="text-center" id="myData">[_]</div> -->
-                    <style>
-                      .error {color: #FF0000;}
-                    </style>
                     <?php
-                    function test_input($data) {
-                      $data = trim($data);
-                      $data = stripslashes($data);
-                      $data = htmlspecialchars($data);
-                      return $data;
-                    }
-
                     $usernameErr = $selected = "";
                     $username = $selected = "";
 
@@ -85,9 +78,14 @@
                       $selected = test_input($_POST["selected"]);
                     }
 
-                    
+                    function test_input($data) {
+                      $data = trim($data);
+                      $data = stripslashes($data);
+                      $data = htmlspecialchars($data);
+                      return $data;
+                    }
                     ?>
-                    <form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                         <select name="selected" id="selected">
                         </select>
                         <br>Discord Username: <input type="text" name="username"><span class="error">* <?php echo $usernameErr;?></span><br>
