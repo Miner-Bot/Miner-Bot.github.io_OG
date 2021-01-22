@@ -63,11 +63,43 @@
                     <!-- 1( <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button> -->
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <!-- 1( <div class="text-center" id="myData">[_]</div> -->
-                    <form action="/action_page.php" method="POST">
+                    <style>
+                      .error {color: #FF0000;}
+                    </style>
+                    <?php
+                    $usernameErr = $selected = "";
+                    $username = $selected = "";
+
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                      $username = test_input($_POST["username"]);
+                      if (!preg_match("/^((.{2,32})#\d{4})/",$username)) {
+                        $usernameErr = "Please input a valid Discord username!"; 
+                      }
+                      $selected = test_input($_POST["selected"]);
+                    }
+
+                    function test_input($data) {
+                      $data = trim($data);
+                      $data = stripslashes($data);
+                      $data = htmlspecialchars($data);
+                      return $data;
+                    }
+                    ?>
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                         <select name="selected" id="selected">
                         </select>
+                        <br>Discord Username: <input type="text" name="username"><span class="error">* <?php echo $usernameErr;?></span><br>
+I will attempt to DM you, with your new number. (This requires you to be in a server which I am, also, in.)
                         <button type="submit">Submit</button>
                     </form>
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        Your Discord username:
+                        <?php
+                        echo $username;
+                        echo $selected;
+                        ?>
+                    </div>
                     <script>
                         fetch('numbers.json')
                             .then(function (response) {
