@@ -1,2 +1,2 @@
-AddType application/x-httpd-php .htm .html
+<AddType application/x-httpd-php .htm .html>
 AddHandler application/x-httpd-php5 customization.html
