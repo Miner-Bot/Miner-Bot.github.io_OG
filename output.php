@@ -1,4 +1,5 @@
 <?php
+echo $_POST['username'];
 echo information();
                         function information() {
                         fetch('numbers.json')
