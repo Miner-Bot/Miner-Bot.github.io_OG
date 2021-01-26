@@ -7,3 +7,7 @@ He is a Discord bot, that I (IcicleSavage) created.
 ### Well... what if the bot seems to be broken?
 If you have a Discord account, you can DM me at IcicleSavage#0381.
 Otherwise, make an issue and title it "Miner Error, on [the command that he errored on]".
+
+
+#### Check out the source code
+![Here](https://github.com/IcicleSavage/MinerBot/)
