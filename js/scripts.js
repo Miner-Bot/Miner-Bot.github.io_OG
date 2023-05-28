@@ -44,6 +44,22 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+const btn = document.querySelector('.btn-toggle');
+btn.addEventListener('click', function() {
+   var element = document.getElementById("SearchQuery");
+   element.classList.toggle("dark-theme");
+   // var element2 = document.getElementById("mainNav");
+   var footer = document.getElementById("footer");
+   footer.classList.toggle('dark-theme');
+   var newatt = document.createAttribute("style");
+   newatt.value = 'background-color: #343a40 !important;';
+   // Then toggle (add/remove) the .dark-theme class to the body
+   document.body.classList.toggle('dark-theme');
+});
+
+$(document).ready(function(){
+   $('[data-toggle="tooltip"]').tooltip(); 
+});
   // Magnific popup calls
   $('#portfolio').magnificPopup({
     delegate: 'a',
@@ -58,6 +74,6 @@
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
-  });
+  })
 
 })(jQuery); // End of use strict
