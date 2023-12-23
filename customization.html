@@ -6,8 +6,21 @@
         <meta name="description" content="" />
         <meta name="author" content="IcicleSavage" />
         <title>Customizing MinerBot</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/tabpic.ico" />
+        <!-- Favicon
+        <link rel="icon" type="image/x-icon" href="assets/img/tabpic.ico" />-->
+	    <!-- Improved Favicon-->
+	    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png?v=lkvGE4968d">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png?v=lkvGE4968d">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png?v=lkvGE4968d">
+	    <link rel="manifest" href="/assets/img/site.webmanifest?v=lkvGE4968d">
+	    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg?v=lkvGE4968d" color="#ff623a">
+	    <link rel="shortcut icon" href="/assets/img/favicon.ico?v=lkvGE4968d">
+	    <meta name="apple-mobile-web-app-title" content="MinerBot">
+	    <meta name="application-name" content="MinerBot">
+	    <meta name="msapplication-TileColor" content="#ff623a">
+	    <meta name="msapplication-TileImage" content="/assets/img/mstile-144x144.png?v=lkvGE4968d">
+	    <meta name="msapplication-config" content="/assets/img/browserconfig.xml?v=lkvGE4968d">
+	    <meta name="theme-color" content="#ffffff">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -29,6 +42,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="/#page-top">MinerBot</a>
+                <button class="btn btn-toggle" onclick="nightnight"><i class="fa fa-moon"></i></button>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -38,6 +52,22 @@
                         <li class="nav-item"><a class="btn btn-primary nav-link-customization js-scroll-trigger" href="#p">Customization</a></li>
                     </ul>
                 </div>
+                <script>
+// Listen for a click on the button
+function nightnight() {
+  document.documentURI = 'customization.html'
+    var element = document.getElementById("SearchQuery");
+   element.classList.toggle("dark-theme");
+   var element2 = document.getElementById("MainNav");
+   var footer = document.getElementById("footer");
+   footer.classList.toggle('dark-theme');
+
+  // Then toggle (add/remove) the .dark-theme class to the body
+  document.body.classList.toggle('dark-theme');
+  element2.classList.toggle("dark-nav-theme");
+
+}
+                </script>
             </div>
         </nav>
         <!-- About-->
@@ -66,6 +96,7 @@
                     <!-- 1( <button class="btn btn-light btn-xl" id="generate" onclick="eeee(10); Numbers();">VIEW</button> -->
                     <!--<button class="btn btn-light btn-xl" id="generate" onclick="eeee();">VIEW</button>-->
                     <!-- 1( <div class="text-center" id="myData">[_]</div> -->
+                    <!-- PHP Code:
                     <?php
                     $useridErr = $selected = "";
                     $userid = $selected = "";
@@ -85,7 +116,9 @@
                       return $data;
                     }
                     ?>
-                    <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+                    -->
+                    <!-- form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'> -->
+                    <form method="post">
                         <select name="selected" id="selected">
                         </select>
                         <br>Discord User ID: <input type="text" name="userid"><span class="error">* <?php echo $usernameErr;?></span><br>
@@ -95,10 +128,12 @@ I will attempt to DM you, with your new number. (This requires you to be in a se
                     <div class="alert">
                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                         Your Discord username:
+                        <!-- MORE PHP CODE:
                         <?php
                         echo $userid;
                         echo $selected;
                         ?>
+                        -->
                     </div>
                     <script>
                         fetch('numbers.json')
@@ -148,44 +183,18 @@ I will attempt to DM you, with your new number. (This requires you to be in a se
                             }, 2000); -->
                     <!-- This is where myfunction(); script *would* go -->
                 </div>
-            </div
+            </div>
         </section>
-        <!-- Contact-->
-        <section class="page-section" id="more-information">
+        <!-- Try It Out-->
+        <section class="page-section" id="Test-his-features">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">More Information</h2>
-                        <div class="text-muted">About this website.</div>
-                        <hr class="divider my-4" />
-                    </div>
-                    <div class="row justify-content-center">
-                        <h4 class="col-lg-8 text-center">LICENSE INFORMATION</h4>                        
-                        <p class="col-lg-8 text-left"><code class="d-block">
-                            This program is free software: you can redistribute it and/or modify
-                            it under the terms of the GNU General Public License as published by
-                            the Free Software Foundation, either version 3 of the License, or
-                            (at your option) any later version.
-                        <br>
-                        <br>
-                            This program is distributed in the hope that it will be useful,
-                            but WITHOUT ANY WARRANTY; without even the implied warranty of
-                            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-                            GNU General Public License for more details.
-                        <br>
-                        <br>
-                            You should have received a copy of the GNU General Public License
-                            along with this program. If not, see https://www.gnu.org/licenses/.
-                        <br>You can find the full license notice <a href="https://github.com/IcicleSavage/IcicleSavage.github.io/blob/main/LICENSE">here</a>
-                        </code></p>
-                    </div>
-                </div>
+                <iframe src="https://discord.com/widget?id=751570387979993110&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="bg-light py-5 page-section" id="footer">
+        <footer id="footer">
             <div class="container"><div class="small text-center text-muted">* = The numbers defined by MinerBot are meant, solely, for use in Discord (only through MinerBot, to be more specific). The owner of the bot is not liable for any incidents that happen in result of any calls made to any of the numbers, provided by MinerBot.</div></div>
-            <div class="container"><div class="small text-center text-muted">MinerBot, a Discord bot, who's main purpose is to entertain. <br>Copyright © 2021  IcicleSavage</div></div>
+            <div class="container"><div class="small text-center text-muted">MinerBot, a Discord bot, who's main purpose is to entertain. <br>Copyright © 2021, MinerBot. <br>All rights reserved.</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
