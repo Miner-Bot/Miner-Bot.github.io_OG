@@ -10,11 +10,11 @@ module.exports = {
 			.setTitle('Hey!')
 			.setDescription('Here is some more information about me!')
 			.setAuthor('MinerBot', 'https://cdn.discordapp.com/avatars/767055142544605194/e454719df1eb6c605fb201e4e7bea649.png?size=1024')
-			.setURL('https://minerbot.xyz')
+			.setURL('https://miner-bot.github.io/')
 			.addFields(
 				{ name: 'My name is MinerBot!|| (Obviously)||', value: 'Thanks for inviting me! I really appreciate the oppurtunity to entertain the server! \n' },
 				{ name: 'You can use `=help` to see all my commands!', value: '\u200b' },
-				{ name: '\u200b', value: 'Go check out my **NEW** website! Click here: [minerbot.xyz](https://minerbot.xyz)' },
+				{ name: '\u200b', value: 'Go check out my **NEW** website! Click here: [My Website]](https://miner-bot.github.io/)' },
 			);
 		message.channel.send(WelcomeEmbed);
 		// send message when he joins the server

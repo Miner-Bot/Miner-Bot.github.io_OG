@@ -28,7 +28,7 @@ module.exports = {
 				.addFields(
 					{ name: '**__Here\'s a list of all my commands__:**', value: `**${data.join('\n')}**` },
 				)
-				.setFooter('Also, you can check out my website, too! Click [here](https://minerbot.xyz)');
+				.setFooter('Also, you can check out my website, too! Click [here](https://miner-bot.github.io/)');
 			data.push(HelpEmbed);
 			return user.send(data)
 				.then(message.react('765319818844176444'))
@@ -57,7 +57,7 @@ module.exports = {
 			.addFields(
 				{ name: 'Here\'s some information that might help.', value: `${data.join('\n')}` },
 			)
-			.setFooter('Also, you can check out my website, too! Click [here](https://minerbot.xyz)');
+			.setFooter('Also, you can check out my website, too! Click [here](https://miner-bot.github.io/)');
 		if (message.channel.type === 'text') {
 			data.push(commandEmbed);
 			return message.reply(data);
@@ -71,7 +71,7 @@ module.exports = {
 				{ name: 'Here\'s some information that might help.', value: `${data.join('\n')}` },
 			)
 			.setTimestamp()
-			.setFooter('Also, you can check out my website, too! Click [here](https://minerbot.xyz)');
+			.setFooter('Also, you can check out my website, too! Click [here](https://miner-bot.github.io/)');
 		if (message.channel.type === 'dm') {
 			data.push(commandEmbedDM);
 			return user.send(data);
